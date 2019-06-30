@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>
+			KCET VNR
+		</title>
+		<link rel="icon" href="image/tlogo.jpg"/>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	</head>
+	<body style="background-color:lightgreen">
+		<header class="mainheader">
+			<center><img class="logo" src="image/logo-new.gif">
+			<nav>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="course.html">Course</a>
+					</li>
+					<li>
+						<a href="download.html">Download</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+					<li>
+						<a href="login.html">Login</a>
+					</li>
+				</ul>
+			</nav>
+			</center>
+		</header>
+		<script>
+			function valid()
+			{
+			var uname=document.getElementById("username").value;
+			var psw=document.getElementById("psw").value;
+			if(uname==psw&&uname!="")
+			{
+				alert("Login success.");
+				window.location="index.html";
+			}
+			else
+			{
+				alert("Login failed.");
+			}
+			}
+		</script>
+		<style>
+			button{
+			height:40px;
+			width:80px;
+			background-color:green;
+			border-radius:30%;
+			}
+			button:hover{
+			height:45px;
+			width:85px;
+			background-color:green;
+			border-radius:30%;
+			}
+		</style>
+		<center>
+			<h3><u>KCET Login</u></h3>
+			<form input type="text" method="post">
+			<strong><b>Username:</b></strong>
+			<input type="text"placeholder="Enter username"name="uname"id="username"required><br/><br/><br/><br/>
+			<strong><b>Password:</b></strong><input type="password" id="psw"placeholder="Enter password"name="psw"required><br/><br/>
+			<br/><button value="Login"onclick="valid()">Login</button>
+			<button type="reset"value="Reset">Reset</button></form>
+			<br/>
+			<h3>Note: Username and Password must be Same</h3>
+		</center>
+	</body>
+</html>
